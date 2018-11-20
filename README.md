@@ -1,0 +1,2 @@
+# config
+store my config.
