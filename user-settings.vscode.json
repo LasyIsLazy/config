@@ -1,0 +1,98 @@
+{
+  "prettier.singleQuote": true,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.css": "none",
+  "stylelint.configOverrides": {
+    "ignoreFiles": ["**/**.js", "**/**.vue", "**/**.md"],
+    "rules": { "block-no-empty": [true, { "severity": "warning" }] }
+  },
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "stylelint.enable": false,
+  "search.location": "sidebar",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "prettier.semi": false,
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "breadcrumbs.enabled": true,
+  // terminal or output
+  "yarn.runInTerminal": true,
+
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo",
+      "color": "#8bc34a",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "fiexme",
+      "color": "#ff5722",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    }
+  ],
+  /**
+   * type:
+   * tag - highlights just the tag
+   * text - highlights the tag and any text after the tag
+   * line - highlights the entire line containing the tag
+   */
+  /**
+   * match `//`, `#`, `<!--`, `/*`, `* `(JSDoc)
+   */
+  "todo-tree.regex": "(//|#|<!--|/\\*|^\\s*\\*)\\s*($TAGS)",
+  "todo-tree.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "tag",
+      "iconColour": "yellow",
+      "foreground": "green",
+      "background": "blue"
+    },
+    "FIXME": {
+      "icon": "check",
+      "type": "tag",
+      "iconColour": "red",
+      "foreground": "red",
+      "background": "green"
+    }
+  }
+}
