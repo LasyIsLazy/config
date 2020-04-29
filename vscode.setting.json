@@ -1,0 +1,26 @@
+{
+    "editor.fontLigatures": true,
+    "eslint.packageManager": "yarn",
+    "npm.packageManager": "yarn",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "breadcrumbs.enabled": true,
+    "vetur.useWorkspaceDependencies": true,
+    "files.associations": {
+        "*.tpl": "html",
+    },
+    "workbench.startupEditor": "none",
+    "workbench.panel.defaultLocation": "right",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    // 启用 eslint 的语言，打代码时会有提示
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    // https://vuejs.github.io/vetur/interpolation.html#generic-language-features
+    "vetur.experimental.templateInterpolationService": true,
+}
